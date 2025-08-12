@@ -1,170 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Furniro project</title>
-  <link rel="stylesheet" href="Assets/css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Furniro Home</title>
+  <link rel="stylesheet" href="Assets/css/style.css">
 </head>
 <body>
 
-  <!-- Navbar -->
-  <header class="navbar">
-    <div class="logo">Furniro</div>
-    <nav class="nav-links">
-      <a href="#">Home</a>
-      <a href="#">Shop</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-    </nav>
-    <div class="nav-icons">
-      <img src="Assets/icon/user.png" alt="User" />
-      <img src="Assets/icon/search.png" alt="Search" />
-      <img src="Assets/icon/heart.png" alt="Heart" />
-      <img src="Assets/icon/cart.png" alt="Cart" />
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="navbar">
+      <!-- Left: Logo -->
+      <div class="logo">
+        <img src="Assets/icon/logo.svg" alt="Furniro Logo">
+        <span>Furniro</span>
+      </div>
+
+      <!-- Center: Navigation Menu -->
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right: Icons -->
+      <div class="icons">
+        <img src="Assets/icon/search.svg" alt="Search">
+        <img src="Assets/icon/user.svg" alt="User">
+        <img src="Assets/icon/heart.svg" alt="Wishlist">
+        <img src="Assets/icon/cart.svg" alt="Cart">
+      </div>
+
+      <!-- Mobile Menu Icon -->
+      <div class="menu-toggle">
+        <img src="Assets/icon/menu.jpg" alt="Menu">
+      </div>
     </div>
   </header>
 
-  <!-- Hero Banner -->
+  <!-- ===== HERO SECTION ===== -->
   <section class="hero">
-    <img src="Assets/image/banner.jpg" alt="Banner" class="hero-img">
-    <div class="hero-text">
-      <p>New Arrival</p>
-      <h1>Discover Our New Collections</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <button>Buy Now</button>
+    <img src="Assets/image/hero.jpg" alt="hero Backgroung" class="hero.bg"/>
+    <div class="hero-content">
+      <span class="tag">New Arrival</span>
+      <h1>Discover Our<br>New Collections</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+      <a href="#" class="btn">BUY NOW</a>
     </div>
   </section>
 
-  <!-- Browse the Range -->
-  <section class="browse-range">
+  <!-- ===== BROWSE THE RANGE ===== -->
+  <section class="browse">
     <h2>Browse The Range</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    <div class="categories">
-      <div><img src="Assets/image/dining.jpg" alt="Dining"/><p>Dining</p></div>
-      <div><img src="Assets/image/living.jpg" alt="Living"/><p>Living</p></div>
-      <div><img src="Assets/image/bedroom.jpg" alt="Bedroom"/><p>Bedroom</p></div>
+    <div class="browse-cards">
+      <div>
+        <img src="Assets/image/dining.jpg" alt="Dining">
+        <h3>Dining</h3>
+      </div>
+      <div>
+        <img src="Assets/image/living.jpg" alt="Living">
+        <h3>Living</h3>
+      </div>
+      <div>
+        <img src="Assets/image/bedroom.jpg" alt="Bedroom">
+        <h3>Bedroom</h3>
+      </div>
     </div>
   </section>
 
-  <!-- Our Products -->
+  <!-- ===== OUR PRODUCTS ===== -->
   <section class="products">
     <h2>Our Products</h2>
     <div class="product-grid">
+      <!-- Product 1 -->
       <div class="product-card">
-        <img src="Assets/image/chair1.jpg" alt="Syltherine">
+        <img src="Assets/image/syltherine.jpg" alt="Syltherine">
+        <div class="discount">-30%</div>
         <h3>Syltherine</h3>
         <p>Stylish cafe chair</p>
-        <p class="price">Rp 2.500.000 <span>Rp 3.500.000</span></p>
+        <span class="price">Rp 2.500.000</span>
+        <span class="old-price">Rp 3.500.000</span>
       </div>
+      <!-- Product 2 -->
       <div class="product-card">
-        <img src="Assets/image/chair2.jpg" alt="Leviosa">
+        <img src="Assets/image/leviosa.jpg" alt="Leviosa">
         <h3>Leviosa</h3>
         <p>Stylish cafe chair</p>
-        <p class="price">Rp 2.500.000</p>
+        <span class="price">Rp 2.500.000</span>
       </div>
+      <!-- Product 3 -->
       <div class="product-card">
-        <img src="Assets/image/sofa1.jpg" alt="Lolito">
+        <img src="Assets/image/lolito.jpg" alt="Lolito">
+        <div class="discount">-50%</div>
         <h3>Lolito</h3>
         <p>Luxury big sofa</p>
-        <p class="price">Rp 7.000.000 <span>Rp 14.000.000</span></p>
+        <span class="price">Rp 7.000.000</span>
+        <span class="old-price">Rp 14.000.000</span>
       </div>
+      <!-- Product 4 -->
       <div class="product-card">
-        <img src="Assets/image/sofa2.jpg" alt="Respira">
+        <img src="Assets/image/respira.jpg" alt="Respira">
+        <div class="new">New</div>
         <h3>Respira</h3>
         <p>Outdoor bar table and stool</p>
-        <p class="price">Rp 5.000.000</p>
+        <span class="price">Rp 500.000</span>
       </div>
+      <!-- Product 5 -->
       <div class="product-card">
-        <img src="Assets/image/chair3.jpg" alt="Grifo">
+        <img src="Assets/image/grifo.jpg" alt="Grifo">
         <h3>Grifo</h3>
         <p>Night lamp</p>
-        <p class="price">Rp 1.500.000</p>
+        <span class="price">Rp 1.500.000</span>
       </div>
+      <!-- Product 6 -->
       <div class="product-card">
-        <img src="Assets/image/table1.jpg" alt="Muggo">
+        <img src="Assets/image/muggo.jpg" alt="Muggo">
+        <div class="new">New</div>
         <h3>Muggo</h3>
         <p>Small mug</p>
-        <p class="price">Rp 150.000</p>
+        <span class="price">Rp 150.000</span>
       </div>
+      <!-- Product 7 -->
       <div class="product-card">
-        <img src="Assets/image/chair4.jpg" alt="Pingky">
+        <img src="Assets/image/pingky.jpg" alt="Pingky">
+        <div class="discount">-60%</div>
         <h3>Pingky</h3>
         <p>Cute bed set</p>
-        <p class="price">Rp 7.000.000 <span>Rp 14.000.000</span></p>
+        <span class="price">Rp 7.000.000</span>
+        <span class="old-price">Rp 14.000.000</span>
       </div>
+      <!-- Product 8 -->
       <div class="product-card">
-        <img src="Assets/image/chair5.jpg" alt="Potty">
+        <img src="Assets/image/potty.jpg" alt="Potty">
+        <div class="new">New</div>
         <h3>Potty</h3>
         <p>Minimalist flower pot</p>
-        <p class="price">Rp 500.000</p>
+        <span class="price">Rp 500.000</span>
       </div>
     </div>
-    <button class="show-more">Show More</button>
+    <div class="show-more">
+      <button>Show More</button>
+    </div>
   </section>
-
-  <!-- Room Inspiration -->
-  <section class="room-inspiration">
-    <div class="inspo-text">
+  <!-- HTML -->
+<section class="inspiration-section">
+  <div class="inspiration-wrapper">
+    <div class="left-content">
       <h2>50+ Beautiful rooms inspiration</h2>
-      <p>Our designer already made a lot of beautiful prototype of rooms that inspire you</p>
-      <button>Explore More</button>
+      <p>
+        Our designer already made a lot of beautiful<br>
+        prototypes of rooms that inspire you.
+      </p>
+      <button class="cta-button">Explore More</button>
     </div>
-    <div class="slider">
-      <img src="Assets/image/room1.jpg" alt="Room Setup"/>
+    <div class="right-content">
+      <div class="image-card with-caption">
+        <img src="Assets/image/room1.jpg" alt="Inner Peace Room">
+        <div class="caption-box">
+          <p class="caption-number">01 — Bed Room</p>
+          <p class="caption-title">Inner Peace</p>
+        </div>
+      </div>
+      <div class="image-card">
+        <img src="Assets/image/room2.jpg" alt="Room #2">
+      </div>
+      <div class="image-card">
+        <img src="Assets/image/room3.jpg" alt="Room #3">
+      </div>
+      <div class="dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
+<!-- Share your setup with #FuniroFurniture -->
+<section class="header">
+  <h2>Share your setup with<br><span class="hashtag">#FuniroFurniture</span></h2>
+</section>
 
-  <!-- Gallery -->
-  <section class="hashtag-gallery">
-    <h2>Share your setup with <br> <span>#FuniroFurniture</span></h2>
-    <div class="gallery-grid">
-      <img src="Assets/image/setup1.jpg" alt="Setup 1">
-      <img src="Assets/image/setup2.jpg" alt="Setup 2">
-      <img src="Assets/image/setup3.jpg" alt="Setup 3">
-      <img src="Assets/image/setup4.jpg" alt="Setup 4">
-    <div class="hashtag-gallery">  
-      <img src="Assets/image/setup5.jpg" alt="Setup 5">
-    </div>  
-      <img src="Assets/image/setup6.jpg" alt="Setup 6">
-      <img src="Assets/image/setup7.jpg" alt="Setup 7">
-    <div class="hashtag-gallery">  
-      <img src="Assets/image/setup8.jpg" alt="Setup 8">
-      <img src="Assets/image/setup9.jpg" alt="Setup 9">
-    </div>  
-    </div>
-  </section>
+<!-- Image Grid -->
+<section class="image-grid">
+  <img src="Assets/image/furniture1.jpg" alt="Furniture 1" />
+  <img src="Assets/image/furniture2.jpg" alt="Furniture 2" />
+  <img src="Assets/image/furniture3.jpg" alt="Furniture 3" />
+  <img src="Assets/image/furniture4.jpg" alt="Furniture 4" />
+  <img src="Assets/image/furniture5.jpg" alt="Furniture 5" />
+  <img src="Assets/image/furniture6.jpg" alt="Furniture 6" />
+  <img src="Assets/image/furniture7.jpg" alt="Furniture 7" />
+  <img src="Assets/image/furniture8.jpg" alt="Furniture 8" />
+  <img src="Assets/image/furniture9.jpg" alt="Furniture 9" />
 
-  <!-- Footer -->
-  <footer class="footer">
+
+ 
+</section>
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Brand & Address -->
     <div class="footer-brand">
-      <h3>Furniro.</h3>
-      <p>400 University Drive Suite 200 Coral Gables, FL 33134 USA</p>
+      <h3>Funiro.</h3>
+      <address>
+        400 University Drive Suite 200 Coral Gables,<br>
+        FL 33134 USA
+      </address>
     </div>
+
+    <!-- Links and Newsletter -->
     <div class="footer-links">
+      <!-- Navigation Links -->
       <div>
         <h4>Links</h4>
-        <p>Home</p>
-        <p>Shop</p>
-        <p>About</p>
-        <p>Contact</p>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
       </div>
+
+      <!-- Help Links -->
       <div>
         <h4>Help</h4>
-        <p>Payment Options</p>
-        <p>Returns</p>
-        <p>Privacy Policies</p>
+        <ul>
+          <li><a href="#">Payment Options</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Privacy Policies</a></li>
+        </ul>
       </div>
-      <div>
-        <h4>Newsletter</h4>
-        <input type="email" placeholder="Enter Your Email Address">
-        <button>Subscribe</button>
-      </div>
-    </div>
-    <div class="copyright">
-      <p>2023 furniro. All rights reserved</p>
-    </div>
-  </footer>
 
+      <!-- Newsletter -->
+      <div class="newsletter">
+        <h4>Newsletter</h4>
+        <form>
+          <input type="email" placeholder="Enter your email address" required />
+          <button type="submit">SUBSCRIBE</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+    <p>&copy; 2023 Funiro. All rights reserved</p>
+  </div>
+</footer>
+
+
+  
 </body>
 </html>

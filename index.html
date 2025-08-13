@@ -43,15 +43,20 @@
   </header>
 
   <!-- ===== HERO SECTION ===== -->
-  <section class="hero">
-    <img src="Assets/image/hero.jpg" alt="hero Backgroung" class="hero.bg"/>
-    <div class="hero-content">
-      <span class="tag">New Arrival</span>
-      <h1>Discover Our<br>New Collections</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
-      <a href="#" class="btn">BUY NOW</a>
-    </div>
-  </section>
+<section class="hero">
+  <div class="hero-image">
+    <img src="Assets/image/hero.jpg" alt="New Collection Room">
+  </div>
+
+  <div class="hero-card">
+    <p class="hero-eyebrow">New Arrival</p>
+    <h2 class="hero-title">Discover Our<br>New Collections</h2>
+    <p class="hero-desc">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.
+    </p>
+    <a href="#" class="hero-btn">BUY NOW</a>
+  </div>
+</section>
 
   <!-- ===== BROWSE THE RANGE ===== -->
   <section class="browse">
@@ -149,30 +154,33 @@
   </section>
   <!-- HTML -->
 <section class="inspiration-section">
-  <div class="inspiration-wrapper">
-    <div class="left-content">
-      <h2>50+ Beautiful rooms inspiration</h2>
-      <p>
-        Our designer already made a lot of beautiful<br>
-        prototypes of rooms that inspire you.
-      </p>
-      <button class="cta-button">Explore More</button>
+  <div class="inspiration-container">
+    <div class="insp-text">
+      <h3>50+ Beautiful rooms<br>inspiration</h3>
+      <p>Our designer already made a lot of beautiful prototypes of rooms that inspire you</p>
+      <a href="#!" class="btn-explore">Explore More</a>
     </div>
-    <div class="right-content">
-      <div class="image-card with-caption">
-        <img src="Assets/image/room1.jpg" alt="Inner Peace Room">
-        <div class="caption-box">
-          <p class="caption-number">01 — Bed Room</p>
-          <p class="caption-title">Inner Peace</p>
-        </div>
-      </div>
-      <div class="image-card">
-        <img src="Assets/image/room2.jpg" alt="Room #2">
-      </div>
-      <div class="image-card">
-        <img src="Assets/image/room3.jpg" alt="Room #3">
-      </div>
-      <div class="dots">
+    <div class="insp-gallery">
+      <article class="insp-card">
+        <img src="Assets/image/room1.jpg" alt="Room Inspiration 1">
+        <button class="insp-arrow" aria-label="Next">
+          &#8594;
+        </button>
+      </article>
+      <article class="insp-card">
+        <img src="Assets/image/room2.jpg" alt="Room Inspiration 2">
+        
+        <button class="insp-arrow" aria-label="Next">
+          &#8594;
+        </button>
+      </article>
+      <article class="insp-card">
+        <img src="Assets/image/room3.jpg" alt="Room Inspiration 3">
+        <button class="insp-arrow" aria-label="Next">
+          &#8594;
+        </button>
+      </article>
+      <div class="insp-dots" aria-hidden="true">
         <span class="dot active"></span>
         <span class="dot"></span>
         <span class="dot"></span>
@@ -180,12 +188,12 @@
     </div>
   </div>
 </section>
+
+
 <!-- Share your setup with #FuniroFurniture -->
 <section class="header">
   <h2>Share your setup with<br><span class="hashtag">#FuniroFurniture</span></h2>
 </section>
-
-<!-- Image Grid -->
 <section class="image-grid">
   <img src="Assets/image/furniture1.jpg" alt="Furniture 1" />
   <img src="Assets/image/furniture2.jpg" alt="Furniture 2" />
@@ -203,7 +211,6 @@
 <!-- Footer -->
 <footer class="footer">
   <div class="footer-container">
-    <!-- Brand & Address -->
     <div class="footer-brand">
       <h3>Funiro.</h3>
       <address>
@@ -211,10 +218,7 @@
         FL 33134 USA
       </address>
     </div>
-
-    <!-- Links and Newsletter -->
     <div class="footer-links">
-      <!-- Navigation Links -->
       <div>
         <h4>Links</h4>
         <ul>
@@ -224,8 +228,6 @@
           <li><a href="#">Contact</a></li>
         </ul>
       </div>
-
-      <!-- Help Links -->
       <div>
         <h4>Help</h4>
         <ul>
@@ -234,8 +236,6 @@
           <li><a href="#">Privacy Policies</a></li>
         </ul>
       </div>
-
-      <!-- Newsletter -->
       <div class="newsletter">
         <h4>Newsletter</h4>
         <form>
@@ -245,8 +245,6 @@
       </div>
     </div>
   </div>
-
-  <!-- Footer Bottom -->
   <div class="footer-bottom">
     <p>&copy; 2023 Funiro. All rights reserved</p>
   </div>
